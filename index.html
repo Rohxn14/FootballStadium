@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iconic Football Stadiums</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            margin: 0;
+        }
+
+        .overview {
+            text-align: center;
+            padding: 20px;
+        }
+        .search-input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Stadium Styles */
+        .stadium-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .stadium {
+            flex-basis: calc(33.33% - 20px);
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            max-width: 400px;
+            border-radius: 5px;
+        }
+
+        .stadium:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .stadium img {
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .stadium h2 {
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .stadium p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Iconic Football Stadiums</h1>
+    <div class="search-container">
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <input type="text" class="search-input" name="q" placeholder="Search...">
+            <button type="submit" class="search-button">Search</button>
+        </form>
+    </div>
+    <div class="overview">
+        <p>Explore some of the most iconic football stadiums from around the world.</p>
+    </div>
+
+    <div class="stadium-container">
+        <!-- Stadium 1 (Santiago Bernabeu) -->
+        <div class="stadium">
+            <a href="https://www.google.com/search?q=Real+madrid" target="_blank">
+                <img src="Images/Bernabeu.webp" width="300" alt="Santiago Bernabeu" onmouseover="changeOpacity(this, 0.7);" onmouseout="changeOpacity(this, 1);">
+            </a>
+            <h2>Santiago Bernabeu</h2>
+            <p>
+                The Santiago Bernabéu Stadium is a famous football (soccer) stadium located in Madrid, Spain.<br>
+                It is the home stadium of one of the most successful and well-known football clubs in the world, Real Madrid Club de Fútbol.
+            </p>
+            <p>Home Team: Real Madrid C F</p>
+        </div>
+
+        <!-- Stadium 2 (Camp Nou) -->
+        <div class="stadium">
+            <a href="https://www.google.com/search?q=Barcelona" target="_blank">
+                <img src="Images/Camp nou.jpeg" width="400" alt="Camp Nou" onmouseover="changeOpacity(this, 0.7);" onmouseout="changeOpacity(this, 1);">
+            </a>
+            <h2>Camp Nou</h2>
+            <p>
+                The Camp Nou is another iconic football (soccer) stadium, located in Barcelona, Spain.<br>
+                It is the home stadium of FC Barcelona, one of the most successful and popular football clubs in the world.
+            </p>
+            <p>Home Team: FC Barcelona</p>
+        </div>
+
+        <!-- Stadium 3 (Wembley) -->
+        <div class="stadium">
+            <a href="https://www.google.com/search?q=Tottenham+Hotspur" target="_blank">
+                <img src="Images/Wembley.jfif" width="400" alt="Wembley" onmouseover="changeOpacity(this, 0.7);" onmouseout="changeOpacity(this, 1);">
+            </a>
+            <h2>Wembley</h2>
+            <p>
+                Wembley Stadium is a renowned sports and entertainment venue in London, UK, with a seating capacity of around 90,000.<br>
+                It is famous for hosting historic football matches, including the 1966 FIFA World Cup Final.
+            </p>
+            <p>Home Team: Tottenham Hotspur</p>
+        </div>
+
+        <!-- Stadium 4 (Kanteerava) -->
+        <div class="stadium">
+            <a href="https://www.google.com/search?q=Bengaluru+FC" target="_blank">
+                <img src="Images/Kanteerava.jpg" width="400" alt="Kanteerava" onmouseover="changeOpacity(this, 0.7);" onmouseout="changeOpacity(this, 1);">
+            </a>
+            <h2>Sri Kanteerava Stadium</h2>
+            <p>
+                The Kanteerava Stadium is a multi-purpose sports facility in Bangalore, India, named after Sri Kanteerava Narasimharaja Wadiyar. <br>
+                Inaugurated in 1997, it hosts various sports events including athletics, football, and hockey, with a seating capacity of around 26,000.<br>
+                 Additionally, the stadium is utilized for cultural and entertainment events in the city.
+            </p>
+            <p>Home Team: Bengaluru FC</p>
+        </div>
+
+        <!-- Stadium 5 (Allianz Arena) -->
+        <div class="stadium">
+            <a href="https://www.google.com/search?q=Bayern+Munich" target="_blank">
+                <img src="Images/allianz-arena.webp" width="300" alt="Allianz Arena" onmouseover="changeOpacity(this, 0.7);" onmouseout="changeOpacity(this, 1);">
+            </a>
+            <h2>Allianz Arena</h2>
+            <p>
+                The Allianz Arena, located in Munich, Germany, is a world-renowned football stadium.<br>
+                Home to FC Bayern Munich and TSV 1860 Munich, its distinctive illuminated façade changes colors to match the home team's kit.
+            </p>
+            <p>Home Team: Bayern Munich</p>
+        </div>
+
+        <!-- Stadium 6 (Old Trafford) -->
+        <div class="stadium">
+            <a href="https://www.google.com/search?q=Manchester+united" target="_blank">
+                <img src="Images/old trafford.jpg" width="400" alt="Old Trafford" onmouseover="changeOpacity(this, 0.7);" onmouseout="changeOpacity(this, 1);">
+            </a>
+            <h2>Old Trafford</h2>
+            <p>
+                Old Trafford, located in Greater Manchester, England, is the iconic home stadium of Manchester United Football Club. <br>
+                With a seating capacity of approximately 74,140 spectators, it stands as one of the UK's largest football venues. <br>
+                Opening its doors in 1910, Old Trafford has hosted countless historic football matches and is celebrated as one of the sport's most iconic arenas.
+            </p>
+            <p>Home Team: Manchester United</p>
+        </div>
+    </div>
+
+    <script>
+        function changeOpacity(element, opacity) {
+            element.style.opacity = opacity;
+        }
+    </script>
+    <footer>
+        <nav></nav>
+        <ul>
+            <li><a href="https://www.football-stadiums.co.uk/Ss"Contact us</li>
+            <li>Youtube</li>
+            <li>Instagram</li>
+        </ul>
+    </footer>
+</body>
+</html>
