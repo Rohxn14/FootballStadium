@@ -4,29 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iconic Football Stadiums</title>
-    <link rel="icon" href="Images/ucl_logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <!-- Include Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="path-to-slick/slick.css"/>
+    <!-- Include Slick Slider JavaScript -->
+    <script type="text/javascript" src="path-to-slick/slick.min.js"></script>
+
 </head>
 <body>
     <header>
         <h1>Iconic Football Stadiums</h1>
     </header>
    
-    <nav class="navbar">
-        <div class="nav-item"><a href="#">Home</a></div>
-        <div class="nav-item"><a href="#">About</a></div>
-        <div class="nav-item"><a href="#">Stadiums</a></div>
-        <div class="nav-item"><a href="#">Contact</a></div>
-    </nav>
-    <div class="overview">
-        <p>Explore some of the most iconic football stadiums from around the world.</p>
-    </div>
+        <nav class="navbar">
+            <div class="nav-item"><a href="#">Home</a></div>
+            <div class="nav-item"><a href="#">About</a></div>
+            <div class="nav-item"><a href="#">Stadiums</a></div>
+            <div class="nav-item"><a href="#">Contact</a></div>
+        </nav>
+        <div class="overview">
+            <p>Explore some of the most iconic football stadiums from around the world.</p>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider">
+                <img src="Images/wak.jpg" width="1080" alt="">
+                <img src="Images/wanda.webp" width="1080" alt="">
+                <img src="Images/flares.jfif" width="1080" alt="">
+                <img src="Images/benz.jpg" width="1080" alt="">
+                <img src="Images/Stadia.jpg" width="1080" alt="">
+                <img src="Images/Wembley.jfif" width="1080" alt="">
+             <!-- Add more images for the slider here -->
+            </div>
+        </div>
     
 
-    <div class="stadium-container">
+        <div class="stadium-container">
         <!-- Stadiums will be dynamically generated here using JavaScript -->
-    </div>
+        </div>
+        </body>
 
-    <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+        <script src="path-to-slick/slick.min.js"></script> <!-- Include Slick Slider JS -->
+        <script src="script.js"></script>
+    
 </body>
 </html>

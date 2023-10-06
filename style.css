@@ -1,23 +1,20 @@
 /* Reset some default styles */
-* {
+body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Set background color to black */
+/* Set a background color */
 body {
-    font-family: 'DM Sans', sans-serif;
-    background-color: #000; /* Black background */
+    background-color: #000;
     color: #fff;
-    overflow: hidden; /* Hide overflow content */
+    font-family: Arial, sans-serif;
 }
 
+/* Header styles */
 header {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px 0;
 }
 
 h1 {
@@ -27,53 +24,46 @@ h1 {
 .navbar {
     background-color: #1a1a1a;
     display: flex;
-    justify-content: space-between;
+    align-items: center; /* Vertically align items */
     padding: 10px 20px;
-    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-/* Style the navigation items */
 .nav-item {
-    flex: 1;
-    text-align: center;
-}
-
-.nav-item a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    margin-right: 20px; /* Add spacing between items */
     transition: color 0.3s;
 }
 
-.nav-item a:hover {
+.nav-item:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.nav-item:hover {
     color: #007bff;
 }
-
-/* Style the overview section */
+/* Overview section styles */
 .overview {
     text-align: center;
-    margin: 20px;
     padding: 20px;
-    background-color: #fff;
-    color: #000; /* Text color changed to black */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Style the stadium container */
+/* Stadiums container styles */
 .stadium-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px;
     gap: 20px;
-    max-height: 600px; /* Set a maximum height */
-    overflow-y: auto; /* Add vertical scrolling if needed */
 }
 
-/* Style individual stadium cards */
+/* Individual stadium card styles */
 .stadium {
     width: calc(33.33% - 20px);
-    margin-bottom: 20px;
     padding: 20px;
     background-color: #333;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -82,113 +72,17 @@ h1 {
     transition: transform 0.2s, background-color 0.2s;
 }
 
-/* Highlight on hover */
-.stadium:hover {
-    background-color: #555;
-    transform: scale(1.05);
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .stadium {
-        width: calc(50% - 20px);
-    }
-}
-
-
-
-/* Style individual stadium cards */
-.stadium {
-    width: calc(33.33% - 20px); /* Adjust card width for responsive design */
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #333; /* Dark background color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s, background-color 0.2s; /* Add transitions */
-}
-
-/* Highlight on hover */
-.stadium:hover {
-    background-color: #555; /* Darken the background on hover */
-    transform: scale(1.05);
-}
-
-/* Style the stadium images */
 .stadium img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    transition: opacity 0.2s ease-in-out; /* Add opacity transition */
+    transition: opacity 0.2s ease-in-out;
 }
 
-/* Opacity change effect on hover */
 .stadium img:hover {
-    opacity: 0.7; /* Reduce opacity when hovering */
+    opacity: 0.7;
 }
 
-/* Style the stadium titles */
-.stadium h2 {
-    margin-top: 10px;
-    font-size: 1.5rem;
-    color: #fff; /* Text color changed to white */
-}
-
-/* Style the stadium descriptions */
-.stadium p {
-    margin-top: 10px;
-    color: #ddd; /* Light gray text color */
-}
-
-/* Style links */
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ... Previous CSS code ... */
-
-/* Style the stadium container */
-.stadium-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px;
-    gap: 20px;
-}
-
-/* Style individual stadium cards */
-.stadium {
-    width: calc(33.33% - 20px);
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #333;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-/* Highlight on hover */
 .stadium:hover {
     background-color: #555;
     transform: scale(1.05);
@@ -199,4 +93,47 @@ a:hover {
     .stadium {
         width: calc(50% - 20px);
     }
+
+    .nav-item {
+        text-align: left;
+        padding: 10px 20px;
+        border-bottom: 1px solid #333;
+    }
 }
+
+/* Sticky navigation bar for larger screens */
+@media (min-width: 769px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+
+/* Set a fixed background image for the body */
+body {
+    background-image: url('path-to-background-image.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Make the slider's background transparent */
+.slider-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: transparent; /* Set the background to transparent */
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Optional shadow for the slider container */
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    background: transparent; /* Set the background to transparent */
+}
+
+.slider img {
+    max-width: 100%;
+    height: auto;
+}
+

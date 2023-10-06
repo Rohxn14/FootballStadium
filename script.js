@@ -1,3 +1,4 @@
+
 // Define an array of stadium data
 const stadiums = [
     {
@@ -9,7 +10,7 @@ const stadiums = [
     },
     {
         name: "Camp Nou",
-        image: "Images/Camp nou.jpeg",
+        image: "Images/camp.jpg" ,
         description: "The Camp Nou is another iconic football (soccer) stadium, located in Barcelona, Spain. It is the home stadium of FC Barcelona, one of the most successful and popular football clubs in the world.",
         team: "FC Barcelona",
         link: "https://www.google.com/search?q=FC+Barcelona"
@@ -97,3 +98,22 @@ function generateStadiumCards() {
 
 // Call the function to generate stadium cards
 generateStadiumCards();
+
+// Initialize the Slick Slider
+$(document).ready(function(){
+    $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000, // Adjust the speed as needed
+        arrows: false, // Remove arrows if you don't want navigation
+        dots: true, // Add dots for navigation
+        infinite: true,
+        speed: 500, // Transition speed
+        slidesToShow: 1, // Number of slides to show at a time
+        adaptiveHeight: true, // Adjust slide height based on content
+        slidesToScroll: 1, // Number of slides to scroll at a time
+        vertical: false, // Make it slide horizontally
+        centerMode: true, // Center-align the current slide
+        focusOnSelect: true // Highlight the current slide
+    });
+});
+
