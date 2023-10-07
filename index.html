@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iconic Football Stadiums</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Include Slick Slider CSS -->
-    <link rel="stylesheet" type="text/css" href="path-to-slick/slick.css"/>
-    <!-- Include Slick Slider JavaScript -->
-    <script type="text/javascript" src="path-to-slick/slick.min.js"></script>
+     
 
 </head>
 <body>
@@ -22,19 +19,29 @@
             <div class="nav-item"><a href="#">Stadiums</a></div>
             <div class="nav-item"><a href="#">Contact</a></div>
         </nav>
+
+        <div class="maindiv"></div>
         <div class="overview">
             <p>Explore some of the most iconic football stadiums from around the world.</p>
         </div>
-
-        <div class="slider-container">
+ 
             <div class="slider">
-                <img src="Images/wak.jpg" width="1080" alt="">
-                <img src="Images/wanda.webp" width="1080" alt="">
-                <img src="Images/flares.jfif" width="1080" alt="">
-                <img src="Images/benz.jpg" width="1080" alt="">
-                <img src="Images/Stadia.jpg" width="1080" alt="">
-                <img src="Images/Wembley.jfif" width="1080" alt="">
-             <!-- Add more images for the slider here -->
+                <div class="images">
+                    <input type="radio" name="slide" id="img1">
+                    <input type="radio" name="slide" id="img2">
+                    <input type="radio" name="slide" id="img3">
+                    <input type="radio" name="slide" id="img4">
+                    <input type="radio" name="slide" id="img5">
+                    <input type="radio" name="slide" id="img6">
+                    <img src="Images/wak.jpg" width="1080" class="m1" alt="">
+                    <img src="Images/wanda.webp" width="1080" class="m2" alt="">
+                    <img src="Images/flares.jfif" width="1080" class="m3" alt="">
+                    <img src="Images/benz.jpg" width="1080" class="m4" alt="">
+                    <img src="Images/Stadia.jpg" width="1080" class="m5" alt="">
+                    <img src="Images/Wembley.jfif" width="1080" class="m6" alt="">
+                </div>
+                
+                <!-- Add more images for the slider here -->
             </div>
         </div>
     
@@ -43,10 +50,7 @@
         <!-- Stadiums will be dynamically generated here using JavaScript -->
         </div>
         </body>
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
-        <script src="path-to-slick/slick.min.js"></script> <!-- Include Slick Slider JS -->
-        <script src="script.js"></script>
+        <script src="script.js"></script>    
     
 </body>
 </html>

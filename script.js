@@ -33,12 +33,13 @@ const stadiums = [
         name: "Allianz Arena",
         image: "Images/allianz-arena.webp",
         description: "The Allianz Arena, located in Munich, Germany, is a world-renowned football stadium. Home to FC Bayern Munich and TSV 1860 Munich, its distinctive illuminated façade changes colors to match the home team's kit.",
+        team:"Bayern Munich",
         link: "https://www.google.com/search?q=Bayern+munich"
     },
     {
         name: "Old Trafford",
         image: "Images/old trafford.jpg",
-        description: "The Santiago Bernabéu Stadium is a famous football (soccer) stadium located in Madrid, Spain. It is the home stadium of Real Madrid Club de Fútbol.",
+        description: "Old Trafford, situated in Greater Manchester, England, is the legendary home stadium of Manchester United Football Club. With a seating capacity of approximately 74,140 spectators, it ranks among the largest football venues in the United Kingdom. Opened in 1910, Old Trafford has witnessed countless historic football matches and is celebrated as one of the sport's most iconic arenas. Its rich history and the fervent support of the 'Red Devils' fan base make it a symbol of football tradition",
         team: "Manchester United",
         link: "https://www.google.com/search?q=Manchester+united"
     },
@@ -99,21 +100,5 @@ function generateStadiumCards() {
 // Call the function to generate stadium cards
 generateStadiumCards();
 
-// Initialize the Slick Slider
-$(document).ready(function(){
-    $('.slider').slick({
-        autoplay: true,
-        autoplaySpeed: 2000, // Adjust the speed as needed
-        arrows: false, // Remove arrows if you don't want navigation
-        dots: true, // Add dots for navigation
-        infinite: true,
-        speed: 500, // Transition speed
-        slidesToShow: 1, // Number of slides to show at a time
-        adaptiveHeight: true, // Adjust slide height based on content
-        slidesToScroll: 1, // Number of slides to scroll at a time
-        vertical: false, // Make it slide horizontally
-        centerMode: true, // Center-align the current slide
-        focusOnSelect: true // Highlight the current slide
-    });
-});
+
 

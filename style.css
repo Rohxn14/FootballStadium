@@ -116,24 +116,3 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
-
-/* Make the slider's background transparent */
-.slider-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    background: transparent; /* Set the background to transparent */
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Optional shadow for the slider container */
-}
-
-.slider {
-    display: flex;
-    justify-content: center;
-    background: transparent; /* Set the background to transparent */
-}
-
-.slider img {
-    max-width: 100%;
-    height: auto;
-}
-
